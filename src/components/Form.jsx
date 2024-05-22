@@ -1,4 +1,10 @@
-function Form(){
+function Form(props){
+    
+    function handleSubmit(){
+        props.addTask("yo")
+    }
+
+
     return (
         <form>
         <h2 className="label-wrapper">
@@ -13,7 +19,7 @@ function Form(){
           name="text"
           autoComplete="off"
         />
-        <button type="submit" className="btn btn__primary btn__lg">
+        <button onClick={handleSubmit} type="submit" className="btn btn__primary btn__lg">
           Add
         </button>
       </form>
