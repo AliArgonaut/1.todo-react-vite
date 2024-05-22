@@ -1,8 +1,6 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## TODO APP 
+this is a simple task tracker application, built in react and vite and deployed to github pages. 
+# functionality 
+users can add tasks, filter tasks by completion or active, edit tasks, check tasks off, and delete tasks.
+# access 
+since this app is in a completed state, and deployed, you can access it by clicking on the deployed link in teh right hand side of the page. 
