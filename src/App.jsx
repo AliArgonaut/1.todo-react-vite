@@ -40,7 +40,7 @@ function App  () {
       </div>
       <h2 id="list-heading">3 tasks remaining</h2>
       <ul role="list" className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
-        <Todo name="Eat" />
+        <Todo name="Eat" completed />
         <Todo name="Shower"/> 
         <Todo name="Build" />
       </ul>
