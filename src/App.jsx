@@ -23,7 +23,7 @@ function App  (props) {
   }
 
 
-  const taskList = tasks?.map((task) => (
+  const taskList = tasks.filter(FILTER_MAP[filter]).map((task) => (
     <Todo id={task.id} 
     name ={task.name} 
     completed={task.completed} 
@@ -40,7 +40,7 @@ function App  (props) {
   ))
   
   const tasksNoun = taskList.length == 1? "task" : "tasks";  
-  const headingText = `${taskList.length} ${tasksNoun} remaining`; 
+  const headingText = taskList.length == 0? "No Scheduled Tasks" : `${taskList.length} ${tasksNoun} remaining`; 
   
   function toggleTaskCompleted(id){
     const updatedTasks = tasks.map((task) => {

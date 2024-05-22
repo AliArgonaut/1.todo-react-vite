@@ -66,7 +66,7 @@ function Todo(props){
 
     return (
         <>
-        <li className="todo">{isEditing ? editingTemplate : viewTemplate}</li>;
+        <li className="todo">{isEditing ? editingTemplate : viewTemplate}</li>
       </>
     )
 }
