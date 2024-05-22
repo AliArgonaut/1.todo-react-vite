@@ -1,22 +1,10 @@
-function FilterButton(){
+function FilterButton(props){
     return (
-    <div className="filters btn-group stack-exception">
-      <button type="button" className="btn toggle-btn" aria-pressed="true">
+      <button type="button" className="btn toggle-btn w-1/3 m-2" aria-pressed={props.isPressed} onClick={() => props.setFilter(props.name)}>
           <span className="visually-hidden">Show </span>
-          <span>all</span>
+          <span>{props.name}</span>
           <span className="visually-hidden"> tasks</span>
         </button>
-        <button type="button" className="btn toggle-btn" aria-pressed="false">
-          <span className="visually-hidden">Show </span>
-          <span>Active</span>
-          <span className="visually-hidden"> tasks</span>
-        </button>
-        <button type="button" className="btn toggle-btn" aria-pressed="false">
-          <span className="visually-hidden">Show </span>
-          <span>Completed</span>
-          <span className="visually-hidden"> tasks</span>
-        </button>
-      </div>
     )
 }
 
