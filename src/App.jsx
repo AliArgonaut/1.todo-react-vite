@@ -26,7 +26,7 @@ function App  (props) {
       <h1>TodoMatic</h1>
       <Form addTask={addTask} />
       <FilterButton /> 
-      <h2 id="list-heading">{headingText}</h2>
+      <h2 className="text-center" id="list-heading">{headingText}</h2>
       <ul role="list" className="todo-list stack-large stack-exception" aria-labelledby="list-heading">
         {taskList}
       </ul>
